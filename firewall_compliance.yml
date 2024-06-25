@@ -1,6 +1,6 @@
 ---
 - name: Check Firewall and Apache Status
-  hosts: "{{ _hosts | default(omit) }}"
+  hosts: infra
   gather_facts: yes
   tasks:
     - name: Check if firewalld service is active
