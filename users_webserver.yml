@@ -9,10 +9,8 @@
         name: "{{ item }}"
         state: present
       loop:
-        - angron
-        - horus
-        - Gulliman
-        - Sangiunious
+        - JoeyB
+        - Jbb3
 
     - name: Install Apache package
       yum:
