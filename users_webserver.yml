@@ -1,6 +1,6 @@
 ---
 - name: Configure RHEL Server
-  hosts: infra
+  hosts: "{{ _hosts | default(omit) }}"
   become: true
 
   tasks:
